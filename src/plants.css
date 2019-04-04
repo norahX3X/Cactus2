@@ -1,0 +1,172 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+/* 
+color pattren 
+yellow 230,182,37
+gray 174	187	189	
+wight 229	237	245	
+light green 75	139	39	
+dark green 27	60	6	
+*/
+
+/* the main pattren 
+dark green  34,56,10	 
+light green 77,107,17
+yellow 248	214	48	
+grass 178,178,79	
+very light green 213,220,176	
+wight 248,246,204	
+*/
+:root {
+	/* Base font size */
+	font-size: 10px;
+
+	/* Heading height variable*/
+	--heading-height: 18em;
+}
+
+body {
+	font-family: "Roboto", Arial, sans-serif;
+	min-height: 100vh;
+    background-color: rgb(218, 248, 204);
+    /* display: flex; */
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	height: var(--heading-height);
+	z-index: 1;
+	/* background: 
+	linear-gradient(rgba(248,214,48,.6), rgba(34,56,10,.6)),
+	 url(https://i0.wp.com/www.healthline.com/hlcmsresource/images/topic_centers/1047-The_Best_Air-Purifying_Plants_For_Your_Home-1296x728-Spider_Plant.jpg?w=1155&h=1528) no-repeat center,
+	 linear-gradient(#4e4376, #2b5876);
+ background-size: cover;
+ border-bottom: .2em solid rgb(77,107,17); */
+}
+
+/* Create angled background with 'before' pseudo-element */
+header::before {
+	content: "";
+	display: block;
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	bottom: 4em;
+	width: 100%;
+	height: calc(var(--heading-height) + 1em);
+	transform: skewY(-3.5deg);
+    background:  
+       linear-gradient(rgba(248,214,48,.6), rgba(34,56,10,.6)),
+		url(https://i0.wp.com/www.healthline.com/hlcmsresource/images/topic_centers/1047-The_Best_Air-Purifying_Plants_For_Your_Home-1296x728-Spider_Plant.jpg?w=1155&h=1528) no-repeat center,
+		linear-gradient(#4e4376, #2b5876);
+	background-size: cover; 
+	border-bottom: .2em solid rgb(77,107,17);
+
+}
+
+header .logo {
+	
+	z-index: auto;
+    display: inline;
+	font-size: calc(2.8em + 2.6vw);
+	font-weight: 700;
+	letter-spacing: .01em;
+	padding: 2rem 0 0 4.5rem;
+	text-shadow: .022em .022em .022em #111;
+	color: #fff;
+}
+.header-right{
+    display: inline;
+	font-size: calc(1em + 1.6vw);
+	font-weight: 400;
+	letter-spacing: .01em;
+	padding: 2rem 0 0 4.5rem;
+	text-shadow: .022em .022em .022em #111;
+	align-content: space-around;
+	/* z-index: 4; */
+    /* padding: 4px; */
+}
+.header-right a{
+    color:#fff; 
+    padding: 2rem 0 0 4.5rem;
+
+}
+.header-right a:hover { 
+    color: rgb(34,56,10);
+  }
+  /* .header-right a:active {
+    color: yellow;
+  } */
+main {
+	padding: calc(var(--heading-height) + 1.5vw) 4em 0;
+}
+.contant{
+    /* z-index: 1; */
+/* 
+    font-size: calc(2em + .25vw);
+	font-weight: 400;
+    line-height: 2;
+    order: 1; */
+    padding-top: 20em;
+	margin-bottom: 4em;
+    position: relative;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+
+}
+.card-img{
+	  /* max-width: 20em ;  */
+	  max-height:50% ; 
+
+    /* height: 20em ; */
+}
+.card-contant{
+	margin: 0.5em;
+
+}
+.plant_card{
+	flex: 1 0 19%; /* explanation below */
+	margin: 5px;
+	min-height: 190px ;
+	/* max-height: 190px ; */
+    /* max-width: 220px ; */
+    /* min-width: 200px ; */
+    margin: 0.5em;
+}
+.card-butt{
+    background-color: rgb(34,56,10);
+	margin-top: 1rem;
+	color: #fff;
+}
+.bold{
+	font-weight: bold;
+}
+.fillter_header{
+	background-color:rgb(213,220,176);
+	width: 100%;
+	height: auto;
+}
+.title{
+	font-weight: bold;
+	font-size: 2em;
+
+}
+
+.paging-module__page-numbers{
+    border-right: none;
+	line-height: initial;
+	
+}
+    .paging-module__btn{
+      padding: 5px 5px 6px;
+	}
+	.paging-module__previous, .paging-module__next{
+		font-size: 1.7em;
+		position: relative;
+		top: 1px;
+		margin: 0 2px;
+	  }
+	
+  
+  

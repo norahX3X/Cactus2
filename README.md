@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 # Cactus
+## Cactus
+cactus is system that tell u how to care plants with there diffrent types and classes 
 
 ## Styling 
 
@@ -9,6 +11,10 @@ https://codepen.io/GeorgePark/pen/PEOKyY
 I used https://reactstrap.github.io/ for styling 
 
 
+## API
+I used plant api (they are in Alpha stage)
+https://trefle.io/api/
+it have lot of scintfic data and names classes and more info than i need 
 
 
 

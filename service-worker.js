@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Cactus/cactus/precache-manifest.caeb184a51eb89db0daf91e4de282d5d.js"
+  "/Cactus2/precache-manifest.43c80af3eb0498ac34caf17bf4e12414.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/Cactus/cactus/index.html", {
+workbox.routing.registerNavigationRoute("/Cactus2/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });

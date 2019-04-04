@@ -1,8 +1,17 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 # Cactus
 
-the header style from 
+## Styling 
+
+The header style from 
 https://codepen.io/GeorgePark/pen/PEOKyY
+
+I used https://reactstrap.github.io/ for styling 
+
+
+
+
+
 
 ## Available Scripts
 

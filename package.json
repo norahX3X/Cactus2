@@ -1,6 +1,6 @@
 {
   "name": "cactus",
-  "homepage": "http://norahx3x.github.io/Cactus/cactus",
+  "homepage": "http://norahx3x.github.io/Cactus2/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,6 +11,7 @@
     "react-bootstrap": "^1.0.0-beta.6",
     "react-dom": "^16.8.6",
     "react-scripts": "2.1.8",
+    "react-search-field": "^1.0.0",
     "reactstrap": "^7.1.0"
   },
   "scripts": {

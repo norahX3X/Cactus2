@@ -143,13 +143,23 @@ main {
 	font-weight: bold;
 }
 .fillter_header{
-	background-color:rgb(213,220,176);
 	width: 100%;
 	height: auto;
+	border: .2em solid rgb(77,107,17);
+	padding: 1em;
+}
+.fillter_header Row {
+	display: flex;
+align-content: center;
+justify-content: space-around;
 }
 .title{
 	font-weight: bold;
 	font-size: 2em;
+
+}
+.fillters{
+	/* margin-right: 1em; */
 
 }
 

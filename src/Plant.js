@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './plants.css';
 import { Card, CardImg, CardText, CardBody,
     CardTitle, CardSubtitle, Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import PlantsDB from './plantDB'
+
 const axios = require('axios');
 //API Authentcation 
 const token='R1ZuUENNOXBnR0RrQkpjSHAxenM5Zz09';
@@ -35,7 +37,7 @@ class Plant extends Component {
 
     }
     handleDetailsClick(plant) {
-      console.log(plant.name)
+      console.log(plant.id)
       this.setState(prevState => ({
         modal: !prevState.modal
       }));
@@ -63,7 +65,9 @@ class Plant extends Component {
             seassons: respo.data.main_species.specifications.growth_period
           })
         }
-        if(respo.data.family_common_name != null){
+        if(respo.data.family_common_name){
+          console.log(respo.data.family_common_name)
+
           this.setState({
             type: respo.data.family_common_name
           })
@@ -83,6 +87,7 @@ class Plant extends Component {
           growth_rate:respo.data.main_species.specifications.growth_rate
         })
     }).catch(e=>{
+      //PlantsDB.one_compleated_plant
 
     })
   }
